@@ -5,6 +5,7 @@ pipeline {
             args '-p 3000:3000' 
         }
     }
+
     stages {
         stage('Build') { 
             steps {
@@ -12,3 +13,5 @@ pipeline {
                 sh 'CI=false npm run build'
             }
         }
+    }
+}
